@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(157 93 249 / 16%) 0px 1px 4px;
+}
+.container .image{
+    width: 46%;
+    position: relative;
+    text-align: center;
+}
+.container .image img{
+    width: 100%;
+}
+.container .image .text{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+}
+.text section{
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+.text h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.text hr{
+    width: 50px;
+    height: 5px;
+    background: #FFF;
+    text-align: center;
+    margin: 0 auto 12px auto;
+    border-radius: 5px;
+}
+.text p{
+    font-size: 13px;
+    padding: 0 15px;
+}
+.container form{
+    width: 45%;
+    margin: auto;
+}
+form h3{
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+form .email_div input{
+    width: 100%;
+    padding: 15px 10px;
+    padding-left: 42px;
+    border: 1px solid #d4d4d4;
+    border-radius: 25px;
+    outline: none;
+    
+}
+form .email_div{
+    position: relative;
+    margin-bottom: 20px;
+}
+form .email_div img{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 15px;
+}
+
+.under_inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.under_inputs .check{
+    display: flex;
+    align-items: center;
+}
+.under_inputs .check label{
+    margin-left: 5px;
+    font-size: 13px;
+}
+.under_inputs a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.sign_link a{
+    padding: 10px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none; 
+    width: 100%;
+    background: linear-gradient(to right , #3497fd , #4ebbff , #084cf7);
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 20px;  
+}
+.creating_acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.creating_acc section{
+    margin-right: 7px;
+}
+.creating_acc a{
+    color: #3497fd;
+    text-decoration: none;
+}
+
+@media(max-width: 991px){
+    .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .container .image{
+        width: 100%;
+    }
+    .container .image img{
+        display: none;
+    }
+    .text{
+        margin-bottom: 20px;
+    }
+    .container .image .text{
+        position: relative;
+        color: #000;
+    }
+    .text hr{
+        background: #000;
+    }
+    .container form{
+        width: 100%;
+    }
+    form h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .text section{
+        font-size: 14px;
+    }
+    .text h2{
+        font-size: 1.9rem;
+        margin: 4px;
+    }
+    .text p{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width: 300px){
+    .under_inputs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .under_inputs .check{
+        margin-bottom: 10px;
+    }
+    .text h2{
+        font-size: 1.7rem;
+    }
+}
